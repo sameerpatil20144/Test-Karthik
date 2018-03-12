@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+		<div ng-init="data1=false">
+			<input type="checkbox" ng-model="data1">
+			<p>
+				{{data1}}
+			</p>
+
+			<input type="password" value="hello" ng-show="!data1"/>
+			<input type="text" value="hello" ng-show="data1"/>
+
+		
+			
+			
+		</div>
+</body>
+</html>

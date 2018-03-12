@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+	<div ng-init="data1 =['puma' ,'adidas' ,'killer jeans','nike']">
+		<input type="text" ng-model="search_data">
+		<ul>
+			<li ng-repeat="ans in data1 | filter:search_data">
+				{{ans | uppercase}}
+				<!-- filter_select a subset of items from an array. -->
+				
+			</li>
+				
+		</ul>
+	</div>
+</body>
+</html>

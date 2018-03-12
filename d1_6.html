@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+		<div ng-init="data1=false">
+			<p ng-hide="!data1">
+				para1
+			</p>
+			<p ng-show="!data1">
+				para2
+			</p>
+			<!-- <p ng-hide="true">
+				para1
+			</p>
+			<p ng-show="true">
+				para2
+			</p> -->
+
+			<button ng-disabled="data1">enter</button>
+			
+			
+		</div>
+</body>
+</html>

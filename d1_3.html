@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+	<div ng-init="data1=100 ;data2=[10,20,30]">
+		<!-- 2 ways to show data-1: h1{{data1}}   2:ng-bind  -->
+		<h1>{{data1}}</h1>  
+		<h1 ng-bind="data1"></h1>
+		<p>
+			<input type="text" ng-model="data1">
+		</p>
+		<h2>{{::data1}}</h2>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+		<div ng-init="data1=100; data2 =[10,20,30]">
+			{{data1}}
+
+			<br />
+			{{data2[0]}}
+			{{data2[1]}}
+			{{data2[2]}}
+			<br />
+			<ul>
+				<li ng-repeat="ans in data2">
+					{{ans}}
+				</li>
+					
+			</ul>
+			<ul>
+				<!-- x=postion,y=value -->
+				<li ng-repeat="(x,y) in data2">
+					{{x + "==" + y}}
+				</li>
+					
+			</ul>
+
+			
+		</div>
+
+		<div ng-init= "data1=200">
+			{{data1}}
+		</div>
+			
+</body>
+</html>
